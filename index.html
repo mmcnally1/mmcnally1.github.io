@@ -1,68 +1,272 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Michael McNally</title>
-    <meta charset="utf-8" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>iPortfolio Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.9.1
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
+
 <body>
-    <nav>
-        <a href="#about"> About </a>
-        <a href ="#portfolio"> Portfolio </a>
-        <a href="#contact"> Contact </a>
-    </nav>
-    <header>
-        <img src="images/headshot.jpeg" />
-    </header>
-    <main>
-        <section id="about">
-            <header>
-                <h1> Hi, I'm Michael McNally </h1>
-                <p>
-                    I fell in love with coding almost 3 years ago during the COVID quarantine, and have kept
-                    at it ever since. I'm currently an MCIT student at the University of Pennsylvania School of
-                    Engineering and Applied Science, where I serve as a TA for CIT 5930 - Introduction to
-                    Computer Systems and CIS 5500 - Database and Information Systems.
-                    I am also currently a software engineer intern at <a href="https://suchef.xyz">suchef</a>.
-                    I am interested in all things computer science, but in particular find myself drawn to robotics,
-                    embedded systems, and distributed systems. I like to tinker with my Arduino and Raspberry Pi, as
-                    well as write C++ code for the ns-3 network simulator. Outside of coding I like to ski, cook,
-                    travel with my wife, and practice Muay Thai and Brazillian Jiu Jitsu. You can find links to some of
-                    my projects below, and some more projects at my <a href="https://github.com/mmcnally1">Github</a>.
-                </p>
-            </header>
-        </section>
-        <section id="portfolio">
-            <header>
-                <h1> Portfolio </h1>
-                    <a>
-                        <img src="images/itinerary.jpeg" />
-                    </a>
-                    <h3>iTinerary</h3>
-                    <p> React | Node.js | Amazon RDS </p>
-                    <a href="https://github.com/mmcnally1/arduino-morse-code">
-                        <img src="images/arduino.jpg" />
-                    </a>
-                    <h3>Arduino Morse Code Decoder</h3>
-                    <p>Embedded Systems | AVR library | C </p>
-                    <a href="https://github.com/mmcnally1/kenken">
-                        <img src="images/kenken.jpeg" />
-                    </a>
-                    <h3>Kenken Solver</h3>
-                    <p>Artificial Intelligence | Constraint Satisfaction | Python </p>
-                    <a href="https://github.com/mmcnally1/Easy21">
-                        <img src="images/easy21.jpg" />
-                    </a>
-                    <h3>Easy 21 Reinforcement Learning Agent</h3>
-                    <p>Q-Learning | Expected SARSA | Jupyter Notebooks </p>
-            </header>
-        </section>
-        <section id="contact">
-            <header>
-                <h1> Contact </h1>
-                <a href="mailto:mnmcnally1@gmail.com"> mnmcnally1@gmail.com</a>
-                <a href="https://www.linkedin.com/in/michael-mcnally1/">LinkedIn</a>
-            </header>
-        </section>
-    </main>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/headshot.jpeg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Michael McNally</a></h1>
+        <div class="social-links mt-3 text-center">
+            <a href="mailto:mmcnally1@gmail.com" class="gmail"><i class="bx bxl-gmail"></i></a>
+            <a href="https://www.linkedin.com/in/michael-mcnally1/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/mmcnally1" class="github"><i class="bx bxl-github"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Michael McNally</h1>
+      <p>I'm a <span class="typed" data-typed-items="Software Engineer"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>I fell in love with coding almost 3 years ago during the COVID quarantine.
+            My workplace was closed, and after spending the first day attempting to watch
+            all 9 Fast & Furious movies, I decided to try to find something productive to
+            do with my time. I had always said I wanted to learn "computer programming" but
+            I didn't really have any idea what that meant. Luckily I stumbled across CS50 on EdX
+            and was hooked immediately. By the time our quarantine ended 3 months later, I had spent
+            hundreds of hours writing code, completed several MOOCs, and decided to change careers.
+        </p>
+        <p>
+            I'm currently wrapping up my Masters in Computing and Information Technology (MCIT) at Penn and
+            working as a software engineer intern at SuChef where I'm working on migrating our code to React.
+            I'm mostly interested in embedded software development, robotics, and the internet of things. I like
+            to play around with my Raspberry Pi and Arduino, and I think it's really cool to write software that
+            interacts with the physical world.
+          </p>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Relevant Experience</h3>
+              <div class="resume-item">
+                <h4>Software Engineer Intern</h4>
+                <h5>2022 - Present</h5>
+                <p><em>SuChef, New York, NY </em></p>
+                <ul>
+                  <li>Collaborate with the engineering team to migrate our web application to React</li>
+                  <li>Develop tooling for users to interface with their social media accounts via our application</li>
+                  <li>Organize and prioritize an evolving set of tasks in the fast-paced environment of an early stage startup</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Graduate Teaching Assistant</h4>
+                <h5>2022-Present</h5>
+                <p><em>University of Pennsylvania School of Engineering and Applied Science, Philadelphia, PA</em></p>
+                <ul>
+                  <li>Work with professors and course management teams to set and enforce course policies and update course content</li>
+                  <li>Reinforce lecture material by preparing and hosting recitations, holding private office hours,
+                   and responding to student questions on the course discussion forums</li>
+                   <li>Supported the following courses:</li>
+                  <ul>
+                       <li>CIT 5930 Intro to Computer Systems (Head TA): Spring '23, Fall '22, Summer '22</li>
+                       <li>CIT 5500 Database and Information Systems: Spring '23</li>
+                       <li>CIT 5930 Intro to Computer Systems: Spring '22</li>
+                       <li>CIT 5920 Mathematical Foundations of Computer Science (Grading TA): Spring '22'</li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Computing &amp; Information Technology</h4>
+              <h5>2021 - 2023 (expected)</h5>
+              <p><em>University of Pennsylvania, Philadelphia, PA</em></p>
+              <p>GPA: 4.0</p>
+              <p>Coursework: Mathematical Foundations of Computer Science, Intro to Computer Systems,
+                  Data Structures &amp Software Design, Computer Systems Programming, Database and Information Systems,
+                  Software Analysis, Networked Systems</p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor of Arts: Business Administration</h4>
+              <h5>2006 - 2010</h5>
+              <p><em>Illinois Wesleyan University, Bloomington, IL</em></p>
+            </div>
+            <h3 class="resume-title">Skills</h3>
+            <div class="resume-item">
+                <ul>
+                    <li>Python: Numpy, Pandas, Matplotlib, Flask, Django</li>
+                    <li>C/C++: STL, OpenMP, Google Test, CMake, gdb, Valgrind</li>
+                    <li>Java: Eclipse, JUnit</li>
+                    <li>Javascript: React, Node.js</li>
+                    <li>Databases: MySQL, MongoDB, Neo4j, AWS RDS</li>
+                    <li>Software Development: Linux, Git, GitHub, Docker, TravisCI</li>
+                </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Check out some of the projects I've done! Although I have also done some cool projects for classes,
+            I can't share them publicly. You can find some more projects (without writeups) on my <a href="https://github.com/mmcnally1">GitHub</a></p>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                  <h4>iTinerary</h4>
+                  <p>React | Node.js | AWS RDS</p>
+                  <img src="assets/img/portfolio/itinerary.jpeg" class="img-fluid" alt="">
+                  <div class="portfolio-links">
+                      <a href="#portfolio" title="View Project"><i class="bx bx-link"></i></a>
+                  </div>
+              </div>
+            </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+                <h4>Arduino Morse Code Decoder</h4>
+                <p>Embedded Systems | AVR Library | C</p>
+                <img src="assets/img/portfolio/arduino.jpg" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                    <a href="https://github.com/mmcnally1/arduino-morse-code" title="View Project"><i class="bx bx-link"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+                <h4>KenKen Solver</h4>
+                <p>AI | Constraint Satisfaction | Python</p>
+                <img src="assets/img/portfolio/kenken.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                    <a href="https://github.com/mmcnally1/kenken" title="View Project"><i class="bx bx-link"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+                <h4>Easy 21 Agent</h4>
+                <p>Reinforcement Learning | Jupyter Notebook | Python</p>
+              <img src="assets/img/portfolio/easy21.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="https://github.com/mmcnally1/Easy21" title="View Project"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
